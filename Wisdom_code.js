@@ -66,16 +66,9 @@ $(document).ready(function() {
   updateQuote() ;
   shareTweet() ;
 
-  $(this).delay(1000).queue(function() {
-
-    $("#new-quote").on("click", function() {
-      newQuote() ;
-    });
-
-     $(this).dequeue();
-
+  $("#new-quote").on("click", function() {
+    newQuote() ;
   });
-
 });
 
 function updateQuote(){
